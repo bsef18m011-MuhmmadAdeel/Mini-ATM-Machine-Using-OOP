@@ -33,20 +33,52 @@ public:											// public member functions
 	//Constructor with all parameters
 	ATM(long int a, string n, int pin, double b, string m)
 	{
-		accountNo = a;	 // assigning the formal arguments to the private member variables
-		name = a;
-		PIN = a;
-		balance = b;
-		mobileNo = m;
+		if (a > 0)		// assigning the formal arguments to the private member variables
+		{
+			accountNo = a;
+		}
+		if (n == " ")
+		{
+			name = n;
+		}
+		if (pin > 0)
+		{
+			PIN = pin;
+		}
+		if (b > 0)
+		{
+			balance = b;
+		}
+		if (m == " ")
+		{
+			mobileNo = m;
+		}
+		
 	}
 
+	// setData function is setting the Data into the private member variables
 	void setData(long int a, string n, int pin, double b, string m)
 	{
-		accountNo = a;	 // assigning the formal arguments to the private member variables
-		name = a;
-		PIN = a;
-		balance = b;
-		mobileNo = m;
+		if (a > 0)		// assigning the formal arguments to the private member variables
+		{
+			accountNo = a;
+		}
+		if (n == " ")
+		{
+			name = n;
+		}
+		if (pin > 0)
+		{
+			PIN = pin;
+		}
+		if (b > 0)
+		{
+			balance = b;
+		}
+		if (m == " ")
+		{
+			mobileNo = m;
+		}
 	}
 
 	//getAccountNo function is returning the user's account no.
