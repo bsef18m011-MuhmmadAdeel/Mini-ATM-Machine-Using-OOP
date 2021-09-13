@@ -112,7 +112,7 @@ public:											// public member functions
 	}
 
 	//setMobile function is Updating the user mobile no
-	void setMobile(string mobPrev, string mobNew)
+	void updateMobile(string mobPrev, string mobNew)
 	{
 		if (mobPrev == mobileNo)						// it will check old Mobile no
 		{
