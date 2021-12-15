@@ -21,6 +21,7 @@ private:										// private member varibles
 	string mobileNo;
 
 public:											// public member functions
+	//Default Constructor
 	ATM()
 	{
 		accountNo = 123456789;	 // assigning the defaultvalues to the private member variables
